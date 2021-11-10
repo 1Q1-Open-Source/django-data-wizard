@@ -39,7 +39,7 @@ class FileLoader(BaseLoader):
         from itertable import load_file
 
         options = self.load_iter_options()
-        return load_file(self.file.path, options=options)
+        return load_file(self.file.name, options=options)
 
 
 class URLLoader(BaseLoader):
